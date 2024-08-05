@@ -281,18 +281,56 @@ INSERT INTO public.galaxy_types VALUES (3, 'neutral');
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.moon VALUES (5, 'Moon 1', 6, true);
+INSERT INTO public.moon VALUES (6, 'Moon 2', 6, true);
+INSERT INTO public.moon VALUES (7, 'Uranus Moon 1', 8, true);
+INSERT INTO public.moon VALUES (8, 'Moon 5', 13, true);
+INSERT INTO public.moon VALUES (9, 'Moon ander', 7, true);
+INSERT INTO public.moon VALUES (10, 'Moon rander', 10, false);
+INSERT INTO public.moon VALUES (11, 'Moon anderson', 15, false);
+INSERT INTO public.moon VALUES (12, 'Moon raverson', 17, true);
+INSERT INTO public.moon VALUES (13, 'Mooners land', 10, false);
+INSERT INTO public.moon VALUES (14, 'Mend are', 8, false);
+INSERT INTO public.moon VALUES (15, 'Magder', 8, false);
+INSERT INTO public.moon VALUES (16, 'Ragnarok', 12, true);
+INSERT INTO public.moon VALUES (17, 'Jupiter moon 2', 7, true);
+INSERT INTO public.moon VALUES (18, 'Kryptonite', 16, true);
+INSERT INTO public.moon VALUES (19, 'Avatar', 8, true);
+INSERT INTO public.moon VALUES (20, 'Enders game moon', 13, false);
+INSERT INTO public.moon VALUES (21, 'Jupiter moon 3', 16, false);
+INSERT INTO public.moon VALUES (22, 'Kryptoniter', 17, true);
+INSERT INTO public.moon VALUES (23, 'Clarion Annie', 16, true);
+INSERT INTO public.moon VALUES (24, 'Moon river', 10, true);
 
 
 --
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.planet VALUES (6, 'Mercury', false, 1);
+INSERT INTO public.planet VALUES (7, 'Venus', false, 1);
+INSERT INTO public.planet VALUES (8, 'Earth', true, 1);
+INSERT INTO public.planet VALUES (9, 'Mars', false, 1);
+INSERT INTO public.planet VALUES (10, 'Jupiter', false, 1);
+INSERT INTO public.planet VALUES (11, 'Saturn', false, 1);
+INSERT INTO public.planet VALUES (12, 'Uranus', false, 1);
+INSERT INTO public.planet VALUES (13, 'Neptune', false, 1);
+INSERT INTO public.planet VALUES (14, 'Pluto', true, 1);
+INSERT INTO public.planet VALUES (15, 'Far far away', true, 3);
+INSERT INTO public.planet VALUES (16, 'Krypton', false, 4);
+INSERT INTO public.planet VALUES (17, 'Aghorra', false, 5);
+INSERT INTO public.planet VALUES (18, 'Coldness', true, 5);
 
 
 --
 -- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.star VALUES (1, 'Sol', 20, 2500.000, 1);
+INSERT INTO public.star VALUES (2, 'Solar', 20, 2500.000, 2);
+INSERT INTO public.star VALUES (3, 'Bader', 300, 1234.200, 3);
+INSERT INTO public.star VALUES (4, 'Anders', 20, 50.700, 5);
+INSERT INTO public.star VALUES (5, 'Baderass', 300, 134.200, 4);
 
 
 --
@@ -313,21 +351,21 @@ SELECT pg_catalog.setval('public.galaxy_types_galaxy_types_id_seq', 3, true);
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 1, false);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 24, true);
 
 
 --
 -- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_planet_id_seq', 1, false);
+SELECT pg_catalog.setval('public.planet_planet_id_seq', 18, true);
 
 
 --
 -- Name: star_star_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.star_star_id_seq', 1, false);
+SELECT pg_catalog.setval('public.star_star_id_seq', 5, true);
 
 
 --
